@@ -1,0 +1,18 @@
+.topic {
+  flex-grow: 1;
+  height: 2em;
+  border: 1px solid black;
+  margin: .2em 0 .2em 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text {
+  flex-order: 1;
+  flex-grow: 9;
+}
+
+.counter {
+  flex-order: 2;
+  flex-grow: 1;
+}

@@ -10,12 +10,16 @@
  */
 
 import React from 'react';
+import Topic from '../../components/Topic';
 
 export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   render() {
     return (
-      <h1>This is the Homepage!</h1>
+      <div key="homepage">
+        <h1>This is the Homepage!</h1>
+        <Topic />
+      </div>
     );
   }
 }
