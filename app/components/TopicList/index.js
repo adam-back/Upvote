@@ -13,7 +13,7 @@ class TopicList extends React.Component {
   render() {
     return (
       <div className={styles.topicList}>
-        <Topic />
+        <Topic topic="stuff" votes='2' />
         <Topic />
         <Topic />
       </div>

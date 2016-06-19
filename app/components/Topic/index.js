@@ -12,8 +12,8 @@ class Topic extends React.Component {
   render() {
     return (
       <div className={styles.topic}>
-        <div className={styles.text}>What's the update on the mobile application?</div>
-        <div className={styles.counter}>1</div>
+        <div className={styles.text}>{ this.props.topic }</div>
+        <div className={styles.counter}>{ this.props.votes }</div>
       </div>
     );
   }
