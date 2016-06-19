@@ -1,18 +1,29 @@
 .topic {
-  flex-grow: 1;
+  flex-basis: 100%;
   height: 2em;
   border: 1px solid black;
   margin: .2em 0 .2em 0;
   display: flex;
   justify-content: space-around;
+  text-align: center;
+}
+
+.voteButton {
+  flex-order: 1;
+  flex-basis: 15%;
 }
 
 .text {
-  flex-order: 1;
-  flex-grow: 9;
+  flex-order: 2;
+  flex-basis: 70%;
 }
 
 .counter {
-  flex-order: 2;
+  flex-order: 3;
+  flex-basis: 15%;
+}
+
+.text, .counter, .voteButton {
   flex-grow: 1;
+  align-self: center;
 }

@@ -11,12 +11,14 @@
 
 import React from 'react';
 import TopicList from '../../components/TopicList';
+import TopicForm from '../../components/TopicForm';
 import styles from './styles.css';
 
 export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div key="homepage" className={styles.homepage}>
+        <TopicForm />
         <TopicList />
       </div>
     );

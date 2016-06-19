@@ -1,0 +1,17 @@
+.topicForm {
+  width: 100%;
+}
+
+p {
+  display: flex;
+}
+
+button {
+  border: 1px solid black;
+  border-radius: 2px;
+  flex-basis: 20%;
+}
+
+input {
+  flex-basis: 80%;
+}
