@@ -14,12 +14,18 @@ import TopicList from '../../components/TopicList';
 import TopicForm from '../../components/TopicForm';
 import styles from './styles.css';
 
+var topics = [
+  { key: 1, topic: 'What are you guys doing?', votes: 2 },
+  { key: 2, topic: 'Who are you?', votes: 1 },
+  { key: 3, topic: 'Is this the end of the world?', votes: 0 }
+];
+
 export default class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div key="homepage" className={styles.homepage}>
         <TopicForm />
-        <TopicList />
+        <TopicList data={ topics }/>
       </div>
     );
   }

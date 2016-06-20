@@ -11,11 +11,15 @@ import Topic from '../Topic';
 
 class TopicList extends React.Component {
   render() {
+    var topics = this.props.data.map(function( topic ) {
+      return (
+        <Topic key={topic.key} topic={topic.topic} votes={topic.votes} />
+      );
+    });
+
     return (
       <div className={styles.topicList}>
-        <Topic topic="stuff" votes='2' />
-        <Topic />
-        <Topic />
+        {topics}
       </div>
     );
   }
